@@ -1,3 +1,14 @@
-# todo
+---
+  - name: get temperature
+    hosts: rpi
+    tasks:
 
-vcgencmd measure_temp
+    - name: Run command
+      shell:
+         "vcgencmd measure_temp"
+      register: mycmd
+      tags: mycmd
+
+    - debug: msg="{{mycmd.stdout}}"
+
+
