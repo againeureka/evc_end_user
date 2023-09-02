@@ -1,6 +1,6 @@
 ---
   - name: get temperature
-    hosts: rpi
+    hosts: all
     tasks:
 
     - name: Run command
