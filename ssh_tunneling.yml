@@ -1,6 +1,6 @@
 ---
   - name: ssh tunneling test
-    hosts: rpi
+    hosts: all
     tasks:
 
     - name: Run command
