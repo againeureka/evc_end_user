@@ -5,7 +5,7 @@
 
     - name: Run command
       shell:
-         "ssh -o GatewayPorts=true -L 8012:0.0.0.0:5001 192.168.1.251 -N"
+         "ssh -o GatewayPorts=true -L 8012:0.0.0.0:5001 192.168.1.251"
       register: mycmd
       tags: mycmd
 
